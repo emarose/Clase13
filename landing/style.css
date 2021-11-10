@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap');
+
+:root{
+  --yellow: #d0f224;
+  --bg-clr: #15141b;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html{
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  margin: 0 150px;
+  background-color: var(--bg-clr);
+}
+
+#menu{  
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+#menu span{
+  margin-right: 30px;
+}
+#menu, #menu ul{
+
+  color:#fff;
+	background-color: transparent;
+}
+
+#menu li{
+  position: relative;
+  color:#fff;
+	margin-right: 50px;
+}
+
+#menu ul{
+	position: absolute;
+	top: 30px;
+	left: 0;
+  opacity: 0;
+  transition: visibility 0s, opacity .4s;
+  visibility: hidden;
+  outline: 1px solid #fff;
+}
+
+#menu a{
+	display: block;
+	font-size: 1em;
+	text-decoration: none;
+	color: #fff;
+	padding: 5px;
+}
+
+#menu li ul{
+  width: 100px;
+  color: #fff;
+}
+
+#menu > li > a > i{
+ font-size: smaller;
+ margin-left: 5px;
+}
+
+#menu li:hover a{
+color:var(--yellow);
+}
+
+#menu > li> ul > li > a:hover{
+  color:#fff;
+}
+
+#menu li:hover ul{
+  opacity: 1;
+  visibility: visible;
+}
+
+#rightMenu{
+  display: flex;
+  margin-left: 350px;
+}
+
+main{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  min-height: 75vh;
+}
+
+.heroText{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+.heroText h4{
+  font-weight: 400;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: var(--yellow);
+}
+
+.heroText h1{
+  max-width: 12ch;
+  color:#fff;
+  font-size: 5em;
+}
+
+.heroText p{
+  padding: 40px 0;
+  max-width: 50ch;
+  line-height: 1.9;
+  color:#fff;
+  font-size: 1rem;
+}
+.heroText button{
+  border: none;
+  border-radius: 4px;
+  background-color: var(--yellow);
+  font-weight: bolder;
+  max-width: fit-content;
+  padding: 12px 20px;
+}
+.heroText button:hover{
+  cursor: pointer;
+}
+.heroText button:focus{
+  background-color: lightblue;
+}
+
+.heroVideo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroVideo video{
+  max-width: 600px;
+}
+
+.comment{
+  width: 80px;
+  border-radius: 6px;
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+}

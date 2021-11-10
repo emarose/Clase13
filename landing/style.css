@@ -12,6 +12,10 @@
   list-style: none;
 }
 
+:focus{
+  background-color:aqua;
+}
+
 html{
   font-family: 'Roboto', sans-serif;
 }
@@ -30,20 +34,21 @@ body{
   margin-right: 30px;
 }
 #menu, #menu ul{
+
   color:#fff;
-  background-color: transparent;
+	background-color: transparent;
 }
 
 #menu li{
   position: relative;
   color:#fff;
-  margin-right: 50px;
+	margin-right: 50px;
 }
 
 #menu ul{
-  position: absolute;
-  top: 30px;
-  left: 0;
+	position: absolute;
+	top: 30px;
+	left: 0;
   opacity: 0;
   transition: visibility 0s, opacity .4s;
   visibility: hidden;
